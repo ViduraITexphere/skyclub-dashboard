@@ -8,6 +8,16 @@ const app = express()
 const PORT = 5000
 
 app.use(bodyParser.json())
+app.use(
+  cors({
+    origin: [
+      'https://66ab3e97b9946796316ea2ed--tranquil-torte-9c0ac1.netlify.app/',
+      'https://another-allowed-origin.com',
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  }),
+)
 
 const corsOptions = {
   origin: 'https://66ab3e97b9946796316ea2ed--tranquil-torte-9c0ac1.netlify.app/',
