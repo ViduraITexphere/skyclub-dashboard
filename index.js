@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 app.use(
   cors({
     origin: [
-      'https://66ab34f44430d095b997fcc1--tranquil-torte-9c0ac1.netlify.app',
+      'https://66ab3e97b9946796316ea2ed--tranquil-torte-9c0ac1.netlify.app/',
       'https://another-allowed-origin.com',
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
