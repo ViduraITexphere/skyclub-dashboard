@@ -19,13 +19,6 @@ app.use(
   }),
 )
 
-const corsOptions = {
-  origin: 'https://66ab3e97b9946796316ea2ed--tranquil-torte-9c0ac1.netlify.app/',
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
-}
-app.use(cors(corsOptions))
-
 mongoose.connect(
   'mongodb+srv://viduraitexphere:roRLEpN5PnbGKO4q@cluster0.0fmf41p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
 )
